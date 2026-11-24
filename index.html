@@ -50,7 +50,7 @@
     <p>There are two big pads. Each one plays a sound, and <b>how hard you tap sets how loud it is</b>. Gentle taps are quiet, firm taps are loud.</p>
     <div class="shot">
       <img src="img/drums.jpg" alt="The drums: a kick drum pad on the left, a snare pad on the right">
-      <svg viewBox="0 0 1400 645" data-marks='[["ring",412,370,300,265],["ring",988,370,300,265]]'></svg>
+      <svg viewBox="0 0 1400 645" data-marks='[["ring",412,370,285,250],["ring",988,370,285,250]]'></svg>
     </div>
     <p class="note">Hold the phone sideways or upright, whichever you like. Upright, the pads sit one above the other.</p>
   </section>
@@ -64,7 +64,7 @@
     </ol>
     <div class="shot">
       <img src="img/drums.jpg" alt="The top bar: record, stop and undo buttons">
-      <svg viewBox="0 0 1400 645" data-marks='[["arrow",560,250,372,66,-60],["ring",352,38,44,40],["arrow",720,150,505,70,40]]'></svg>
+      <svg viewBox="0 0 1400 645" data-marks='[["arrow",620,300,378,72,-70],["ring",352,38,46,42]]'></svg>
     </div>
     <p>Next to it: the <b>square</b> stops and starts everything, and the <b>curly arrow</b> undoes the last thing you recorded.</p>
     <p class="note">To add more on top, go to another instrument and tap record again. It counts you in, 1 2 3 4, and everything starts again from the top with you.</p>
@@ -105,7 +105,7 @@
     <p>Tap the <b>pencil</b> beside a pad. Its choices appear on the pad: tap the circles to hear each sound. Tap the pencil again when you're done.</p>
     <div class="shot">
       <img src="img/editdrums.jpg" alt="Editing the kick drum: a ring of circles to choose its sound">
-      <svg viewBox="0 0 1400 645" data-marks='[["arrow",260,60,125,128,40],["ring",108,137,40,38]]'></svg>
+      <svg viewBox="0 0 1400 645" data-marks='[["arrow",420,330,130,160,-60],["ring",108,137,44,42]]'></svg>
     </div>
     <p class="note">The two-arrows button in the corner swaps the pads left and right.</p>
   </section>
@@ -142,16 +142,16 @@
       const x = cx + Math.cos(a) * rx * k, y = cy + Math.sin(a) * ry * k;
       d += (i ? " L" : "M") + x.toFixed(1) + " " + y.toFixed(1);
     }
-    stroke(svg, d, 7);
+    stroke(svg, d, 11);
   }
   function arrow(svg, x1, y1, x2, y2, bend) {
     const mx = (x1 + x2) / 2, my = (y1 + y2) / 2;
     const dx = x2 - x1, dy = y2 - y1, len = Math.hypot(dx, dy);
     const cx = mx - dy / len * bend, cy = my + dx / len * bend;
-    stroke(svg, `M${x1} ${y1} Q${cx} ${cy} ${x2} ${y2}`, 7);
-    const ang = Math.atan2(y2 - cy, x2 - cx), h = 34;
+    stroke(svg, `M${x1} ${y1} Q${cx} ${cy} ${x2} ${y2}`, 11);
+    const ang = Math.atan2(y2 - cy, x2 - cx), h = 50;
     const a1 = ang + Math.PI - 0.5, a2 = ang + Math.PI + 0.5;
-    stroke(svg, `M${x2 + Math.cos(a1) * h} ${y2 + Math.sin(a1) * h} L${x2} ${y2} L${x2 + Math.cos(a2) * h} ${y2 + Math.sin(a2) * h}`, 7);
+    stroke(svg, `M${x2 + Math.cos(a1) * h} ${y2 + Math.sin(a1) * h} L${x2} ${y2} L${x2 + Math.cos(a2) * h} ${y2 + Math.sin(a2) * h}`, 11);
   }
   document.querySelectorAll("svg[data-marks]").forEach(svg => {
     JSON.parse(svg.dataset.marks).forEach(m => (m[0] === "ring" ? ring : arrow)(svg, ...m.slice(1)));

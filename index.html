@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One by Two: how to play</title>
+<style>
+  :root { --paper:#f6f0e1; --ink:#3b3936; --soft:#77726a; --red:#d2403a; --pink:#f3c9cc; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink);
+         font:17px/1.55 -apple-system, "Helvetica Neue", Helvetica, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:28px 18px 60px; }
+  h1, h2, .hand { font-family:"Bradley Hand", "BradleyHandITCTT-Bold", "Segoe Print", cursive; font-weight:bold; }
+  h1 { font-size:40px; line-height:1.1; margin:0 0 4px; }
+  .sub { color:var(--soft); margin:0 0 26px; }
+  section { margin:0 0 34px; }
+  h2 { font-size:28px; margin:0 0 6px; display:flex; align-items:center; gap:10px; }
+  .num { display:inline-grid; place-items:center; width:38px; height:38px; flex:none;
+         border:2.5px solid var(--ink); border-radius:52% 46% 50% 48% / 48% 52% 46% 54%;
+         background:var(--pink); font-size:22px; }
+  p { margin:6px 0 10px; }
+  ol, ul { margin:6px 0 10px; padding-left:24px; }
+  li { margin:5px 0; }
+  .shot { position:relative; margin:12px 0 8px; border:2px solid var(--ink);
+          border-radius:14px 18px 12px 16px / 16px 12px 18px 14px; overflow:hidden; background:#fff; }
+  .shot img { display:block; width:100%; height:auto; }
+  .shot svg { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; }
+  .note { font-size:15px; color:var(--soft); }
+  .box { border:2px dashed #b9b1a2; border-radius:14px; padding:12px 16px; background:#fbf7ec; }
+  a { color:#2c5fa8; }
+</style>
+</head>
+<body>
+<main>
+  <h1>One by Two</h1>
+  <p class="sub">A two-pad music app for sketching songs. Here's how to get going in five minutes.</p>
+
+  <section>
+    <h2><span class="num hand">1</span>Get the app</h2>
+    <ol>
+      <li>Install Apple's free <b>TestFlight</b> app from the App Store. It's how apps are tested before they go in the store.</li>
+      <li>Open the invite link you were sent, on your iPhone.</li>
+      <li>Tap <b>Accept</b>, then <b>Install</b>. One by Two appears on your home screen like any other app.</li>
+    </ol>
+    <p class="note">The first time you use the microphone, it asks for permission. That's only for recording your voice, and nothing leaves your phone.</p>
+  </section>
+
+  <section>
+    <h2><span class="num hand">2</span>Tap the pads</h2>
+    <p>There are two big pads. Each one plays a sound, and <b>how hard you tap sets how loud it is</b>. Gentle taps are quiet, firm taps are loud.</p>
+    <div class="shot">
+      <img src="img/drums.jpg" alt="The drums: a kick drum pad on the left, a snare pad on the right">
+      <svg viewBox="0 0 1400 645" data-marks='[["ring",412,370,300,265],["ring",988,370,300,265]]'></svg>
+    </div>
+    <p class="note">Hold the phone sideways or upright, whichever you like. Upright, the pads sit one above the other.</p>
+  </section>
+
+  <section>
+    <h2><span class="num hand">3</span>Make a loop</h2>
+    <ol>
+      <li>Tap the <b>red record</b> button at the top.</li>
+      <li>Play a little beat on the drums.</li>
+      <li>Tap record again at the end. Your beat now loops round and round.</li>
+    </ol>
+    <div class="shot">
+      <img src="img/drums.jpg" alt="The top bar: record, stop and undo buttons">
+      <svg viewBox="0 0 1400 645" data-marks='[["arrow",560,250,372,66,-60],["ring",352,38,44,40],["arrow",720,150,505,70,40]]'></svg>
+    </div>
+    <p>Next to it: the <b>square</b> stops and starts everything, and the <b>curly arrow</b> undoes the last thing you recorded.</p>
+    <p class="note">To add more on top, go to another instrument and tap record again. It counts you in, 1 2 3 4, and everything starts again from the top with you.</p>
+  </section>
+
+  <section>
+    <h2><span class="num hand">4</span>Change instrument</h2>
+    <p><b>Swipe sideways</b> on the strip beside the pads, or tap the <b>arrows</b> at the bottom corners. There are drums, bass, keys, guitar, a wind instrument and a microphone.</p>
+    <div class="shot">
+      <img src="img/swipe.jpg" alt="The pads sliding over to the next instrument">
+      <svg viewBox="0 0 1400 645" data-marks='[["arrow",1250,360,880,360,30],["ring",1291,527,46,42]]'></svg>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num hand">5</span>Keys, guitar and the animals</h2>
+    <p>On the keys and guitar, the <b>left pad plays chords</b>: the bottom half picks which chord, the top half changes what kind (tap one, then play a chord). The chords all come from the same key, so they sound good together.</p>
+    <p>The <b>right pad has an animal</b> on it. Touch it, drag it around, or flick it and watch what happens to the sound. No instructions: find out by ear!</p>
+    <div class="shot">
+      <img src="img/keys.jpg" alt="The keys: a chord pad on the left, a bird among clouds on the right">
+      <svg viewBox="0 0 1400 645" data-marks='[["ring",412,500,290,125],["ring",412,245,290,120],["arrow",1060,240,830,315,-40]]'></svg>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num hand">6</span>Sing into it</h2>
+    <p>On the microphone, <b>tap the microphone pad</b> to start recording your voice, and tap it again to stop. It loops along with everything else.</p>
+    <p>Then try moving the <b>parrot</b> up its pad: it sings along with you in harmony.</p>
+    <div class="shot">
+      <img src="img/mic.jpg" alt="The microphone pad on the left, a parrot in a jungle on the right">
+      <svg viewBox="0 0 1400 645" data-marks='[["ring",412,360,170,185],["arrow",985,560,1000,260,50]]'></svg>
+    </div>
+    <p class="note">Headphones help, so the speaker doesn't get recorded too.</p>
+  </section>
+
+  <section>
+    <h2><span class="num hand">7</span>Choose a different sound</h2>
+    <p>Tap the <b>pencil</b> beside a pad. Its choices appear on the pad: tap the circles to hear each sound. Tap the pencil again when you're done.</p>
+    <div class="shot">
+      <img src="img/editdrums.jpg" alt="Editing the kick drum: a ring of circles to choose its sound">
+      <svg viewBox="0 0 1400 645" data-marks='[["arrow",260,60,125,128,40],["ring",108,137,40,38]]'></svg>
+    </div>
+    <p class="note">The two-arrows button in the corner swaps the pads left and right.</p>
+  </section>
+
+  <section>
+    <h2><span class="num hand">8</span>Tell me what you think</h2>
+    <div class="box">
+      <p>Anything at all helps: what was fun, what was confusing, what sounded wrong. Just text me, or take a <b>screenshot</b> while you're in the app and tap <b>Share Beta Feedback</b> to send a note.</p>
+      <p>Stuck? I'm happy to FaceTime and walk you through it.</p>
+    </div>
+    <p class="note">New versions appear in TestFlight as updates. The app collects nothing about you: <a href="https://one-by-two-app.github.io/privacy/">privacy policy</a>.</p>
+  </section>
+</main>
+
+<script>
+// Hand-drawn pencil marks over the screenshots: a slightly wobbly ring or arrow.
+(function () {
+  let seed = 7;
+  const rnd = () => { seed = (seed * 16807) % 2147483647; return seed / 2147483647 - 0.5; };
+  const NS = "http://www.w3.org/2000/svg";
+  function stroke(svg, d, w) {
+    const p = document.createElementNS(NS, "path");
+    p.setAttribute("d", d); p.setAttribute("fill", "none");
+    p.setAttribute("stroke", "#d2403a"); p.setAttribute("stroke-width", w);
+    p.setAttribute("stroke-linecap", "round"); p.setAttribute("stroke-linejoin", "round");
+    p.setAttribute("opacity", "0.9");
+    svg.appendChild(p);
+  }
+  function ring(svg, cx, cy, rx, ry) {
+    let d = "", n = 40, start = rnd() * 2;
+    for (let i = 0; i <= n + 4; i++) {
+      const a = start + (i / n) * Math.PI * 2;
+      const k = 1 + rnd() * 0.05 + (i > n ? 0.06 : 0);
+      const x = cx + Math.cos(a) * rx * k, y = cy + Math.sin(a) * ry * k;
+      d += (i ? " L" : "M") + x.toFixed(1) + " " + y.toFixed(1);
+    }
+    stroke(svg, d, 7);
+  }
+  function arrow(svg, x1, y1, x2, y2, bend) {
+    const mx = (x1 + x2) / 2, my = (y1 + y2) / 2;
+    const dx = x2 - x1, dy = y2 - y1, len = Math.hypot(dx, dy);
+    const cx = mx - dy / len * bend, cy = my + dx / len * bend;
+    stroke(svg, `M${x1} ${y1} Q${cx} ${cy} ${x2} ${y2}`, 7);
+    const ang = Math.atan2(y2 - cy, x2 - cx), h = 34;
+    const a1 = ang + Math.PI - 0.5, a2 = ang + Math.PI + 0.5;
+    stroke(svg, `M${x2 + Math.cos(a1) * h} ${y2 + Math.sin(a1) * h} L${x2} ${y2} L${x2 + Math.cos(a2) * h} ${y2 + Math.sin(a2) * h}`, 7);
+  }
+  document.querySelectorAll("svg[data-marks]").forEach(svg => {
+    JSON.parse(svg.dataset.marks).forEach(m => (m[0] === "ring" ? ring : arrow)(svg, ...m.slice(1)));
+  });
+})();
+</script>
+</body>
+</html>
